@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-lancamento-cadastro',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LancamentoCadastroComponent implements OnInit {
 
-  constructor() { }
+  tipos = [
+    {label: 'Receita', value: 'RECEITA'},
+    {label: 'Despesa', value: 'DESPESA'}
+  ];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
